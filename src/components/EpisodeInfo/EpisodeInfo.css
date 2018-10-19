@@ -1,0 +1,14 @@
+h3,
+h4 {
+  color: white;
+}
+
+ul {
+  color: white;
+  list-style-type: none;
+}
+
+.episodeContainer {
+  border: 1px solid #f7da1e;
+  padding: 5px;
+}
