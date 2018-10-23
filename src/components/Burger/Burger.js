@@ -17,7 +17,7 @@ class Burger extends Component {
     return (
       <Consumer>
         {value => {
-          const burgers = value.burgers;
+          const { burgers } = value;
           const botd = burgers[Math.floor(Math.random() * burgers.length)];
           return (
             <div>

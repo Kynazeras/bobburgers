@@ -1,7 +1,7 @@
 import React from "react";
 import "./EpisodeInfo.css";
 
-const EpisodeInfo = ({ episodeName, episodeNum, trivia }) => {
+const EpisodeInfo = ({ episodeName, episodeNum, trivia, id }) => {
   return (
     <div>
       <div className="container episodeContainer">
@@ -12,7 +12,7 @@ const EpisodeInfo = ({ episodeName, episodeNum, trivia }) => {
         </h4>
         <ul>
           {trivia.map(trivia => (
-            <li>{trivia}</li>
+            <li key={id}>{trivia}</li>
           ))}
         </ul>
       </div>
