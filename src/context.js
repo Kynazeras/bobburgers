@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+const uuidv4 = require("uuid/v4");
 
 const Context = React.createContext();
 
@@ -6,6 +7,7 @@ export class Provider extends Component {
   state = {
     burgers: [
       {
+        id: uuidv4(),
         name: "New Bacon-ings",
         episodeName: "Human Flesh",
         episodeNum: "S01E01",
@@ -14,6 +16,7 @@ export class Provider extends Component {
         ]
       },
       {
+        id: uuidv4(),
         name: "The Child Mollester",
         episodeName: "Human Flesh",
         episodeNum: "S01E01",
@@ -24,6 +27,7 @@ export class Provider extends Component {
         ]
       },
       {
+        id: uuidv4(),
         name: "Foot Feta-ish Burger",
         episodeName: "Crawl Space",
         episodeNum: "S01E02",
@@ -34,6 +38,7 @@ export class Provider extends Component {
         ]
       },
       {
+        id: uuidv4(),
         name: "Tunami",
         episodeName: "Crawl Space",
         episodeNum: "S01E02",
@@ -43,12 +48,14 @@ export class Provider extends Component {
         ]
       },
       {
+        id: uuidv4(),
         name: "Mission A-Corn-Plished Burger",
         episodeName: "Sacred Cow",
         episodeNum: "S01E03",
         trivia: ["Pun on the phrase 'Mission accomplished'"]
       },
       {
+        id: uuidv4(),
         name: "Pepper Don't Preach Burger",
         episodeName: "Sacred Cow",
         episodeNum: "S01E03",
@@ -57,6 +64,7 @@ export class Provider extends Component {
         ]
       },
       {
+        id: uuidv4(),
         name: "Rest in Peas Burger",
         episodeName: "Sacred Cow",
         episodeNum: "S01E03",
@@ -69,6 +77,10 @@ export class Provider extends Component {
       }
     ]
   };
+
+  componentDidMount() {
+    console.log(this.state.burgers);
+  }
 
   render() {
     return (

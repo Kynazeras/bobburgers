@@ -2,11 +2,17 @@ import React from "react";
 
 const RandomButton = ({ refresh }) => {
   return (
-    <button onClick={refresh} type="button" className="btn btn-dark">
-      <span role="img" aria-label="burger">
-        🍔
-      </span>
-    </button>
+    <div className="container">
+      <button
+        onClick={refresh}
+        type="button"
+        className="btn btn-warning btn-lg"
+      >
+        <span role="img" aria-label="burger">
+          🍔
+        </span>
+      </button>
+    </div>
   );
 };
 

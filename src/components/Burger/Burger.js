@@ -3,6 +3,26 @@ import "./Burger.css";
 import EpisodeInfo from "../EpisodeInfo/EpisodeInfo";
 import { Consumer } from "../../context";
 import RandomButton from "../RandomButton/RandomButton";
+import styled from "styled-components";
+
+const Board = styled.div`
+  width: 300px;
+  height: 300px;
+  background-color: #6b6e76;
+  border: 10px solid #af4844;
+  color: white;
+  padding: 2px;
+  margin: 5% auto;
+`;
+
+const BotdName = styled.h4`
+  margin-top: 40px;
+`;
+
+const BoardRule = styled.hr`
+  width: 75%;
+  border-color: white;
+`;
 
 class Burger extends Component {
   state = {
@@ -20,16 +40,16 @@ class Burger extends Component {
           const { burgers } = value;
           const botd = burgers[Math.floor(Math.random() * burgers.length)];
           return (
-            <div>
+            <div className="container">
               <RandomButton refresh={this.refresh} />
               <div className="container">
-                <div className="board">
+                <Board>
                   <h1>Burger</h1>
                   <h3>Of The Day</h3>
-                  <hr />
-                  <h4 className="botd-name">{botd.name}</h4>
+                  <BoardRule />
+                  <BotdName>{botd.name}</BotdName>
                   <h4>$5.95</h4>
-                </div>
+                </Board>
                 <EpisodeInfo
                   episodeName={botd.episodeName}
                   episodeNum={botd.episodeNum}

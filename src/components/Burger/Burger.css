@@ -1,24 +1,5 @@
-.board {
-  width: 300px;
-  height: 300px;
-  background-color: #6b6e76;
-  border: 10px solid #af4844;
-  color: white;
-  padding: 2px;
-  margin: 5% auto;
-}
-
-hr {
-  width: 75%;
-  border-color: white;
-}
-
 h1,
 h3,
 h4 {
   font-family: "Permanent Marker", cursive;
-}
-
-.botd-name {
-  margin-top: 40px;
 }
