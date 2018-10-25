@@ -14,7 +14,7 @@ const EpisodeInfo = ({ episodeName, episodeNum, trivia, id }) => {
         <h3>Episode Info:</h3>
         <hr />
         <h4>
-          Name: {episodeName}({episodeNum})
+          Name: {episodeName} ({episodeNum})
         </h4>
         <ul>
           {trivia.map(trivia => (
