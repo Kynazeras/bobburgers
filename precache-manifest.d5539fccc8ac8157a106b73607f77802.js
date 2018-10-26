@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/bobburgers/static/js/runtime~main.974008f0.js"
   },
   {
-    "revision": "5516258dea3d493ed4de",
-    "url": "/bobburgers/static/js/main.5516258d.chunk.js"
+    "revision": "8e5c58a5e56e533a9805",
+    "url": "/bobburgers/static/js/main.8e5c58a5.chunk.js"
   },
   {
     "revision": "330f3d93fc30eb171e33",
     "url": "/bobburgers/static/js/1.330f3d93.chunk.js"
   },
   {
-    "revision": "5516258dea3d493ed4de",
+    "revision": "8e5c58a5e56e533a9805",
     "url": "/bobburgers/static/css/main.f83cef98.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/bobburgers/static/css/1.a5c4c8e3.chunk.css"
   },
   {
-    "revision": "2d35dcd0aaecc0df6be8b557abbb5c1b",
+    "revision": "d0d1634923f6177c0dafd4a3996ad58e",
     "url": "/bobburgers/index.html"
   }
 ];
